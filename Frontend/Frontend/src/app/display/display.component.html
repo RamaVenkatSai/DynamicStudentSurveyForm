@@ -1,0 +1,60 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div *ngFor="let employee of employees">
+    <div>{{employee.name}}</div>
+    </div>
+    <p *ngIf="employees==null">Loading...</p>
+    <table class="w3-table-all w3-hoverable" *ngIf="employees!=null">
+        <tr>
+          <th>SystemGeneratedId</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>StudentId</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zipcode</th>
+            <th>Phone number</th>
+            <th>Email</th>
+            <th>Date of Survey</th>
+            <th>Liked about Campus</th>
+            <th>Origin of Interest</th>
+            <th>Likelyhood of Recommendation</th>
+            <th>Raffle</th>
+            <th>Comments</th>
+        </tr>
+    
+        <tr *ngFor="let index of employees">
+          <td>{{index?.id}}</td>
+            <td>{{index?.fname}}</td>
+            <td>{{index?.lname}}</td>
+            <td>{{index?.studentid}}</td>
+            <td>{{index?.streetaddress}}</td>
+           
+            <td>{{index?.city}}</td>
+            <td>{{index?.state}}</td>
+            <td>{{index?.zipcode}}</td>
+            <td>{{index?.telephone}}</td>
+            <td>{{index?.email}}</td>
+            <td>{{index?.surveydate}}</td>
+            <td>{{index?.interestInUniversity}}</td>
+            <td>{{index?.originOfInterest}}</td>
+            <td>{{index?.recommend}}</td>
+            <td>{{index?.data}}</td>
+            <td>{{index?.comments}}</td>
+           </tr>
+           
+    </table>
+    <a routerLink="/survey">Click here to go to survey form</a> <br>
+    <a routerLink="/">Click here togo to the homepage</a><br>
+    <footer>
+      <a href="https://www2.gmu.edu/">
+      <img src="/assets/images/us_u_gmu.jpg" alt="GMU Logo" style="float:right;width:200px;height:70px; text-shadow: 0 0 0px #FF0000;">
+      </a>
+      <p>Authors: Kamala Srihas Pochiraju,
+         Sree Vaishnavi Aluru,
+        Venkat Sai Rama,
+       Sai Sri Lekha Thirunahari
+    </p>
+      
+   </footer>

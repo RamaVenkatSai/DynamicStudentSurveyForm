@@ -1,0 +1,197 @@
+
+    <div class="w3-container">
+      <div class="topclass">
+         <a href="https://www2.gmu.edu/">
+         <img src="/assets/images/us_u_gmu.jpg" alt="GMU Logo" width="300" height="50" style="background:white"></a>
+         
+            <h1><b>Survey Form</b></h1>
+         
+      </div> 
+<div id="example1"> 
+<form #addForm="ngForm" class="py-3 needs-validation" #studentForm="ngForm" (ngSubmit) = "onAddEmployee(addForm)" autocomplete="on" >
+  
+  <label for="fname">First Name<label style="color: red">*</label></label>
+  <div class="input-group">
+    <input type="text" size="50" class="form-control" id="fname"  ngModel name="fname" placeholder="First Name"    autofocus  required>
+  
+    
+    
+</div>
+<div class="mb-3">
+  <label for="lname">Last Name<label style="color: red">*</label></label>
+  <div class="input-group">
+    <input type="text" class="form-control" id="lname" ngModel name="lname" placeholder="Last Name"  required>
+  </div>
+  </div>
+  <div class="mb-3">
+    <label for="studentid">Student ID<label style="color: red" >*</label></label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="studentid" ngModel name="studentid" placeholder="G01333358"   required>
+    </div>
+     
+      <div id="errorStudentid" style="color: red"></div>
+  </div>
+  <div class="mb-3">
+    <label for="email">Email<label style="color: red">*</label></label><br>
+    <input type="email" class="form-control" id="email" ngModel name="email" placeholder="you@example.com"   required>
+    
+    <div id="errorEmail" style="color: red"></div>
+  </div>
+  <div class="mb-3">
+    <label for="address">Street Address<label style="color: red">*</label></label><br>
+    <input type="text" class="form-control" id="streetaddress" ngModel name="streetaddress" placeholder="1234 Main St"  required>
+    <div id="errorStreet" style="color: red"></div>
+    
+  </div>
+  <div class="mb-3">
+    <label for="city">City<label style="color: red">*</label></label><br>
+    <input type="text" class="form-control" id="city" ngModel name="city" placeholder="City"  required>
+    
+  </div>
+  <div class="row">
+    <div class="col-md-5 mb-3">
+      <label for="country">Country<label style="color: red">*</label></label><br>
+      <input type="text" class="form-control" id="country" ngModel name="country" placeholder="country"   required>
+      
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="state">State<label style="color: red">*</label></label><br>
+      <input type="text" class="form-control" id="state" ngModel name="state" placeholder="state"  required>
+      
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="zipcode">Zipcode<label style="color: red">*</label></label><br>
+      <input type="number" class="form-control" id="zipcode" ngModel name="zipcode" placeholder="zipcode"  required>
+      
+    </div>
+
+  </div>
+  <div class="mb-3">
+    <label for="data">Data<label style="color: red">*</label></label><br>
+<input type="text" class="form-control" id="data" ngModel name="data" placeholder="1,2,3,4,5,6,7,8,9,10"   required>
+   
+  </div>
+  <div class="mb-3">
+    <label for="telephone">Telephone number</label><br>
+    <input type="text" class="form-control" id="telephone" ngModel name="telephone" placeholder="555-555-5555" >
+  </div>
+  <div class="mb-3">
+    <label for="url">URL<span class="text-muted">(Optional)</span></label><br>
+    <input type="text" class="form-control" id="url" ngModel name="url" placeholder="http://username_example.com" >
+  </div>
+  <div class="mb-3">
+    <label for="surveydate">Date of Survey</label><br>
+    <input type="date" class="form-control" id="surveydate" ngModel name="surveydate" placeholder="mm-dd-yyyy" >
+  </div>
+  <hr class="mb-4">
+                <h5>What did you like most about the campus</h5>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="students" ngModel name="likemost" value="Students" >
+                    <label class="custom-control-label" for="students">Students</label>
+                  </div>
+          
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="location" ngModel name="likemost" value="Location" >
+                    <label class="custom-control-label" for="location">Location</label>
+                  </div>
+          
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="campus" ngModel name="likemost" value="Campus" >
+                    <label class="custom-control-label" for="campus">Campus</label>
+                  </div>
+          
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="atmosphere" ngModel name="likemost" value="Atmosphere" >
+                    <label class="custom-control-label" for="atmosphere">Atmosphere</label>
+                  </div>
+          
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="dormrooms" ngModel name="likemost" value="Dormrooms" >
+                    <label class="custom-control-label" for="dormrooms">Dorm-rooms</label>
+                  </div>
+          
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="sports" ngModel name="likemost" value="Sports">
+                    <label class="custom-control-label" for="sports">Sports</label>
+                  </div>
+                  <hr class="mb-4">
+                  <h5>How did you get interested in the university<label style="color: red">*</label></h5>
+
+      <div class="d-block my-3">
+        <div class="custom-control custom-radio">
+          <input id="friends" ngModel name="interestInUniversity" type="radio" class="custom-control-input" value="Friends">
+          <label class="custom-control-label" for="friends">Friends</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="television" ngModel name="interestInUniversity" type="radio" class="custom-control-input" value="Television" >
+          <label class="custom-control-label" for="television">Television</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="internet" ngModel name="interestInUniversity" type="radio" class="custom-control-input" value="Internet" >
+          <label class="custom-control-label" for="internet">Internet</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input id="others" ngModel name="interestInUniversity" type="radio" class="custom-control-input" value="Others" >
+          <label class="custom-control-label" for="others">Others</label>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <h5>Additional Comments</h5>
+      <textarea id="comments" ngModel name="comments" rows="4" cols="100" ></textarea>
+      <hr class="mb-4">
+      <h5>Please select high-school graduation date</h5>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="graduationMonth">Month</label>
+          <input list="month" ngModel name="month" >
+            <datalist id="month">
+              <option value="January">
+              <option value="February">
+              <option value="March">
+              <option value="April">
+              <option value="May">
+              <option value="June">
+              <option value="July">
+              <option value="August">
+              <option value="September">
+              <option value="October">
+              <option value="November">
+              <option value="December">
+            </datalist>
+        </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="graduationYear">Year</label>
+          <input type="text" step="1" id="graduationYear" ngModel name="graduationYear" placeholder="yyyy" >
+        </div>
+        <hr class="mb-4">
+      <h5>How likely are you to recommend this school to other prospective students</h5>
+
+      <div class="mb-3">
+        <select id="recommend" ngModel name="recommend" >
+          <option value="veryLikely">Very Likely</option>
+          <option value="likely">Likely</option>
+          <option value="unlikely">Unlikely</option>
+        </select>
+      </div>
+     
+      <p style="color: red">Submit gets enabled only if all required fields are filled !!! </p>   
+<button class="col-md-5 btn btn-primary btn-lg btn-block"    type="submit" value="Submit">Submit</button>
+
+</form>
+</div>
+<button class="col-md-5 btn btn-primary btn-lg btn-block"    routerLink="/cancel"value="Submit">Cancel</button><br>
+  <a routerLink="/display">Click here to look at forms you have submitted</a><br>
+  <a routerLink="/">Click here to go to homepage</a> 
+  <footer>
+    <a href="https://www2.gmu.edu/">
+    <img src="/assets/images/us_u_gmu.jpg" alt="GMU Logo" style="float:right;width:200px;height:70px; text-shadow: 0 0 0px #FF0000;">
+    </a>
+    <p>Authors: Kamala Srihas Pochiraju,
+       Sree Vaishnavi Aluru,
+      Venkat Sai Rama,
+     Sai Sri Lekha Thirunahari
+  </p>
+    
+ </footer>

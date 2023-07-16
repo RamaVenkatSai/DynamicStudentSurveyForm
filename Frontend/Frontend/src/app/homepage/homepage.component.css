@@ -1,0 +1,67 @@
+
+.topclass {/*The heading at the top of the page should be inside a rectangular box with a solid borderin GMU green (#006633) and 5px width. The box should use a box-shadow of yourstyling choice.*/
+	background: purple;
+	font-size: 25px;
+	padding: 5px 50px 50px 5px;
+	border: 5px solid #006633;
+	box-shadow: inset 0px 0px 0px 5px white;
+	margin: 1px;
+    
+}
+
+h1 {
+	color: #006633;
+	text-shadow: 1px 1px 10px green;
+	width: 800px;
+	box-shadow: 15px -10px green;
+	border: 5px solid green;
+	margin: 5px 595px 5px;
+    
+    text-align: center;
+    align-items: center;
+}
+/*Your web page should make use of the George Mason University color scheme in some
+way. Green: #006633 Yellow: #FFCC33*/
+footer { 
+	border: 5px solid #006633;
+	text-align: center;
+	padding: 3px;
+	background-color: #FFCC33;
+	color: white;
+}
+body { /* The body of the window rendering your page should have a light gray (or a color of your choice) background. */
+   border: black;
+   background-color: lightgrey;
+   font-size: xx-large;
+   }
+
+#example1 {
+         border: 2px solid black;
+         padding: 5px 5px 5px 15px;
+         background-color: lightgrey;
+         font-size: x-large;
+         }
+input[type="text"] {
+width: 200px;
+height: 30px;
+}
+input[type="number"] {
+    width: 200px;
+    height: 30px;
+    }
+    input[type="date"] {
+        width: 200px;
+        height: 30px;
+        }
+        input[type="email"] {
+            width: 200px;
+            height: 30px;
+            }
+        input[type="checkbox"] {
+            width: 100px;
+            height: 15px;
+            }
+            input[type="radio"] {
+                width: 100px;
+                height: 15px;
+                }
